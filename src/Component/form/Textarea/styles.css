@@ -1,0 +1,24 @@
+.content {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #262b5c;
+    border-radius: 5px;
+    height: 100px;
+    margin-top: 10px;
+    background: #dce2e8;
+    padding: 10px;
+    resize: none;
+}
+
+textarea::placeholder{
+    color: #555;
+    font-size: 13px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 700;
+}

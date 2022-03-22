@@ -1,0 +1,29 @@
+.content {
+    margin-top: 20px;
+}
+
+.button-action {
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+    background: #2e3576;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.button-action:hover {
+    background: #262b5c;
+}
+
+input.value-quantity {
+    height: 28px;
+    width: 40px;
+    padding: 5px;
+    border: 1px solid #262b5c;
+    border-radius: 5px;
+}
