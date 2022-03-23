@@ -24,6 +24,7 @@ input.value-quantity {
     height: 28px;
     width: 40px;
     padding: 5px;
+    background: #dce2e8;
     border: 1px solid #262b5c;
     border-radius: 5px;
 }

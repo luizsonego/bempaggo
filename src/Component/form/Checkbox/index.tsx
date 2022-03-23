@@ -1,21 +1,33 @@
+import React, { ChangeEventHandler, HTMLAttributes } from "react";
 import './styles.css';
 
-interface ICheckbox {
-    id: string;
-    value: string;
-    label: string;
+interface ICheckboxProps extends HTMLAttributes<HTMLInputElement> {
+  name: string;
+  label: string;
+  onChange: ChangeEventHandler<HTMLInputElement>;
+  placeholder?: string;
+  value?: string;
+  type?: string;
+  error?: string;
+  className?: string;
 }
 
-function Checkbox({id, value, label}: ICheckbox) {
+const Checkbox: React.FC<ICheckboxProps> = ({ label, name, value, onChange, ...rest }) => {
   return (
     <div>
-        <label htmlFor={id} className="checkbox-container">
+        <label htmlFor={name} className="checkbox-container">
             {label}
-            <input type="checkbox" id={id} value={value} />
+            <input 
+              type="checkbox" 
+              id={name} 
+              name={name}
+              value={value}
+              onChange={onChange}
+              {...rest} 
+            />
             <span className="checkbox"></span>
         </label>
-    </div>
+    </div>    
   )
 }
-
 export default Checkbox;

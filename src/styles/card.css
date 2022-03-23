@@ -23,12 +23,6 @@
     font-weight: normal;
 }
 
-.card .body {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
 .shape {
     background: url('../assets/separator.svg') no-repeat;
     width: 100%;

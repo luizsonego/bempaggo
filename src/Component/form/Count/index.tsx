@@ -2,7 +2,12 @@ import { useState } from "react"
 
 import './styles.css'
 
-function Count() {
+interface ICount {
+    
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void | number;
+}
+
+function Count(props: ICount) {
     const [quantity, setQuantity] = useState(0)
     const [errorMessage, setErrorMessage] = useState('')
     
